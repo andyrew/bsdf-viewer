@@ -13,15 +13,12 @@ and their use in [Radiance](https://www.radiance-online.org/) then see
 [this slides](https://www.radiance-online.org/community/workshops/2019-new-york-ny/presentations/day1/20190821_BSDF_and_Matrix_Tutorial_final.pdf) from the BSDF workshop.
 
 
-[![Click to open the viewer](https://user-images.githubusercontent.com/2915573/63813125-98a77000-c8fa-11e9-8c13-d0405afb43e6.png)](https://www.ladybug.tools/bsdf-viewer/)
+[![Click to open the viewer](https://user-images.githubusercontent.com/2915573/63890516-2fceff00-c9b1-11e9-98a8-0b35ef58d52e.png)](https://www.ladybug.tools/bsdf-viewer/)
 
 ## Roadmap
 
 The project is a work in progress and currently does not support TensorTree BSDFs. The
 parser for TensorTree files has been already implemented but there is no viewer!
-
-The page style needs to be re-done. The webpage looks like a page designed around 1992
-which surprisingly supports interactive visualization!
 
 ## Credits
 
@@ -29,12 +26,15 @@ The BSDF viewer is using [D3js](https://github.com/d3/) for interactive visualiz
 
 The legend is modified from [this example](http://bl.ocks.org/syntagmatic/e8ccca52559796be775553b467593a9f).
 
+The viewer is using [polygon-clipping](https://github.com/mfogel/polygon-clipping)
+library for merging outgoing patches for TensorTree BSDFs.
+
 So many thanks to:
 
 - Greg Ward for Radiance, for answering all my stupid questions about BSDF and
   providing sample code and related documents.
 - Andy McNeil for all the above except for not creating Radiance and plus his genBSDF
-  tutorial.
+  tutorial. And if that was not enough now he has contributed code to the viewer!
 - David Geisler-Moroder for the comprehensive BSDF workshop, providing the conversion
   factors for Klems BSDF and answering my random BSDF questions.
 - Rob Guglielmetti for testing and providing feedback and answering my questions.
